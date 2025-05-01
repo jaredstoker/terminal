@@ -5,17 +5,17 @@
   "type": "module",
   "license": "MIT",
   "author": {
-    "name": "Yassine Fathi",
-    "url": "https://fathi.me",
-    "email": "yassine@fathi.me"
+    "name": "Jared Stoker",
+    "url": "https://jared.stoker.com",
+    "email": "stokernetworks@gmail.com"
   },
   "funding": {
     "type": "Paypal",
-    "url": "https://paypal.me/yfthi"
+    "url": "https://www.paypal.biz/jawredd"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/m4tt72/terminal"
+    "url": "https://github.com/jaredstoker/terminal"
   },
   "scripts": {
     "dev": "vite",
