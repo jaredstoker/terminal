@@ -19,7 +19,7 @@ Thanks!
 ### Using docker (recommended)
 
 ```bash
-docker run -d --name terminal -p 3000:3000 ghcr.io/jaredstoker/terminal
+docker run -d --name terminal -p 3000:3000 ghcr.io/jaredstoker/terminal:jaredstoker-personalize
 ```
 
 ### Using npm/yarn

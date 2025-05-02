@@ -7,13 +7,28 @@ const hostname = window.location.hostname;
 
 
 export const commands: Record<string, (args: string[]) => Promise<string> | string> = {
-  help: () => 'Available commands: ' + Object.keys(commands).join(', '),
+  help: () => 'Available commands: '\n + Object.keys(commands).join('\n '),
   hostname: () => hostname,
   whoami: () => 'guest',
   date: () => new Date().toLocaleString(),
   vi: () => `why use vi? try 'emacs'`,
   vim: () => `why use vim? try 'emacs'`,
   emacs: () => `why use emacs? try 'vim'`,
+  email: (args: string[]) => {
+    return `Email: ${packageJson.author.email}`
+  },
+  github: (args: string[]) => {
+        window.open('https://www.github.com/jaredstoker');
+        return `Opening GitHub profile`
+  },
+  linkedin: (args: string[]) => {
+        window.open('https://www.linkedin.com/in/jaredstoker');
+        return `Opening Linkedin profile`
+  },
+  twitter: (args: string[]) => {
+        window.open('https://https://x.com/jaredstoker');
+        return `Opening Twitter profile`
+  },
   echo: (args: string[]) => args.join(' '),
   sudo: (args: string[]) => {
     window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ');
@@ -120,8 +135,11 @@ export const commands: Record<string, (args: string[]) => Promise<string> | stri
      ██║███████║██████╔╝█████╗  ██║  ██║    ███████╗   ██║   ██║   ██║█████╔╝ █████╗  ██████╔╝
 ██   ██║██╔══██║██╔══██╗██╔══╝  ██║  ██║    ╚════██║   ██║   ██║   ██║██╔═██╗ ██╔══╝  ██╔══██╗
 ╚█████╔╝██║  ██║██║  ██║███████╗██████╔╝    ███████║   ██║   ╚██████╔╝██║  ██╗███████╗██║  ██║
- ╚════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═════╝     ╚══════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
-                                                                                               v${packageJson.version}
+ ╚════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═════╝     ╚══════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝v${packageJson.version}
+tech enthusiast, open source supporter, and a big fan of the terminal.
+
+@jawredd
+
 Type 'help' to see list of available commands.
 `,
 };
