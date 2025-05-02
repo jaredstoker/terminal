@@ -14,10 +14,7 @@ export const commands: Record<string, (args: string[]) => Promise<string> | stri
   vi: () => `why use vi? try 'emacs'`,
   vim: () => `why use vim? try 'emacs'`,
   emacs: () => `why use emacs? try 'vim'`,
-  email: (args: string[]) => {
-    return `Email: ${packageJson.author.email}`
-  },
-  github: (args: string[]) => {
+  github: (args: string[]) => { 
         window.open('https://www.github.com/jaredstoker');
         return `Opening GitHub profile`
   },
