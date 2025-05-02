@@ -23,7 +23,7 @@ export const commands: Record<string, (args: string[]) => Promise<string> | stri
         return `Opening Linkedin profile`
   },
   twitter: (args: string[]) => {
-        window.open('https://https://x.com/jaredstoker');
+        window.open('https://x.com/jaredstoker');
         return `Opening Twitter profile`
   },
   echo: (args: string[]) => args.join(' '),
