@@ -7,7 +7,7 @@ const hostname = window.location.hostname;
 
 
 export const commands: Record<string, (args: string[]) => Promise<string> | string> = {
-  help: () => 'Available commands: '\n + Object.keys(commands).join('\n '),
+  help: () => 'Available commands: \n' + Object.keys(commands).join('\n '),
   hostname: () => hostname,
   whoami: () => 'guest',
   date: () => new Date().toLocaleString(),
