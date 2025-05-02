@@ -5,6 +5,7 @@ import { theme } from '../stores/theme';
 
 const hostname = window.location.hostname;
 
+
 export const commands: Record<string, (args: string[]) => Promise<string> | string> = {
   help: () => 'Available commands: ' + Object.keys(commands).join(', '),
   hostname: () => hostname,
