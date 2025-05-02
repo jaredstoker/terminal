@@ -11,9 +11,9 @@ export const commands: Record<string, (args: string[]) => Promise<string> | stri
   hostname: () => hostname,
   whoami: () => 'guest',
   date: () => new Date().toLocaleString(),
-  vi: () => `why use vi? try 'emacs'`,
-  vim: () => `why use vim? try 'emacs'`,
-  emacs: () => `why use emacs? try 'vim'`,
+  //vi: () => `why use vi? try 'emacs'`,
+  //vim: () => `why use vim? try 'emacs'`,
+  //emacs: () => `why use emacs? try 'vim'`,
   github: (args: string[]) => { 
         window.open('https://www.github.com/jaredstoker');
         return `Opening GitHub profile`
@@ -23,7 +23,7 @@ export const commands: Record<string, (args: string[]) => Promise<string> | stri
         return `Opening Linkedin profile`
   },
   twitter: (args: string[]) => {
-        window.open('https://x.com/jaredstoker');
+        window.open('https://www.x.com/jaredstoker');
         return `Opening Twitter profile`
   },
   echo: (args: string[]) => args.join(' '),
