@@ -135,7 +135,7 @@ export const commands: Record<string, (args: string[]) => Promise<string> | stri
  ╚════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═════╝     ╚══════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝v${packageJson.version}
 tech enthusiast, open source supporter, and a big fan of the terminal.
 
-@jawredd
+@jaredstoker
 
 Type 'help' to see list of available commands.
 `,
