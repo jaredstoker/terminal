@@ -4,7 +4,7 @@ import { history } from '../stores/history';
 import { theme } from '../stores/theme';
 
 //const hostname = window.location.hostname;
-const hostname = jaredstoker.com
+const hostname = www.jaredstoker.com
 
 
 export const commands: Record<string, (args: string[]) => Promise<string> | string> = {
