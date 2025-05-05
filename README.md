@@ -1,4 +1,4 @@
-# [M4TT72 | Terminal](https://term.m4tt72.com)
+# [Jared Stoker | Terminal](https://www.jaredstoker.com)
 
 A terminal style website
 
@@ -6,7 +6,7 @@ A terminal style website
 
 ## IMPORTANT
 
-This is a new version of [m4tt72/terminal](https://github.com/m4tt72/terminal), which is built with [Svelte](https://svelte.dev/).
+This is a personalized version of [m4tt72/terminal](https://github.com/m4tt72/terminal), which is built with [Svelte](https://svelte.dev/).
 
 If you are looking for the old version, please check out the [v2 branch](https://github.com/m4tt72/terminal/tree/v2).
 
