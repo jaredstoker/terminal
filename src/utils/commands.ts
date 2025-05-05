@@ -9,7 +9,7 @@ const hostname = 'www.jaredstoker.com'
 
 export const commands: Record<string, (args: string[]) => Promise<string> | string> = {
   help: () => 'Available commands: \n' + Object.keys(commands).join('\n '),
-  hostname: () => "www.jaredstoker.com",
+  hostname: () => hostname,
   whoami: () => 'guest',
   date: () => new Date().toLocaleString(),
   //vi: () => `why use vi? try 'emacs'`,
